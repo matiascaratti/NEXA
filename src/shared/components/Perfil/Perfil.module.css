@@ -1,0 +1,90 @@
+.profile {
+	position: relative;
+	flex: 0 0 auto;
+}
+
+.trigger {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	padding: 0.4rem 0.65rem;
+	border-radius: 5px;
+	color: #ffffff;
+	font: inherit;
+	cursor: pointer;
+	list-style: none;
+}
+
+.trigger::-webkit-details-marker {
+	display: none;
+}
+
+.trigger::after {
+	width: 0.45rem;
+	height: 0.45rem;
+	margin: -0.2rem 0 0 0.15rem;
+	border-right: 2px solid currentColor;
+	border-bottom: 2px solid currentColor;
+	content: "";
+	transform: rotate(45deg);
+}
+
+.profile[open] .trigger::after {
+	margin-top: 0.2rem;
+	transform: rotate(225deg);
+}
+
+.trigger:hover,
+.trigger:focus-visible {
+	background-color: rgb(255 255 255 / 14%);
+}
+
+.trigger:focus-visible,
+.menu a:focus-visible {
+	outline: 2px solid #ffffff;
+	outline-offset: 2px;
+}
+
+.avatar {
+	display: grid;
+	width: 2rem;
+	height: 2rem;
+	place-items: center;
+	border-radius: 50%;
+	background-color: #ffffff;
+	color: #a12020;
+	font-weight: 700;
+}
+
+.menu {
+	position: absolute;
+	top: calc(100% + 0.65rem);
+	right: 0;
+	z-index: 1;
+	min-width: 10rem;
+	padding: 0.35rem;
+	border: 1px solid #e5e7eb;
+	border-radius: 5px;
+	background-color: #ffffff;
+	box-shadow: 0 8px 20px rgb(0 0 0 / 16%);
+}
+
+.menu a {
+	display: block;
+	padding: 0.65rem 0.75rem;
+	border-radius: 3px;
+	color: #252525;
+	text-decoration: none;
+}
+
+.menu a:hover,
+.menu a:focus-visible {
+	background-color: #f3f4f6;
+}
+
+.menu a:last-child {
+	margin-top: 0.25rem;
+	border-top: 1px solid #e5e7eb;
+	border-radius: 0;
+	color: #a12020;
+}
