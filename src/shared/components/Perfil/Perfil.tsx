@@ -4,7 +4,9 @@ export const Perfil = () => {
 	return (
 		<details className={styles.profile}>
 			<summary className={styles.trigger}>
-				<span className={styles.avatar} aria-hidden="true">P</span>
+				<span className="material-symbols-outlined" aria-hidden="true">
+                    person
+                </span>
 				<span>Perfil</span>
 			</summary>
 			<nav className={styles.menu} aria-label="Opciones de perfil">
