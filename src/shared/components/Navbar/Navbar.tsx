@@ -5,7 +5,7 @@ import { Perfil } from "../Perfil/Perfil";
 export const Navbar = () => {
     return (
         <nav className={styles.navbar} aria-label="Navegación principal">
-            <h1 className={styles.title}>Compritas</h1>
+            <h1 className={styles.title}>NEXA</h1>
             <SearchBar />
             <Perfil />
         </nav>
