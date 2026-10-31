@@ -4,7 +4,15 @@ export interface Product {
 	price: number;
 	description: string;
 	image: string;
+	category: string;
 }
+
+export const categories = [
+	{ slug: 'abrigos', name: 'Abrigos', category: 'abrigo' },
+	{ slug: 'pantalones', name: 'Pantalones', category: 'pantalon' },
+	{ slug: 'remeras', name: 'Remeras', category: 'remera' },
+	{ slug: 'accesorios', name: 'Accesorios', category: 'accesorio' },
+];
 
 export const products: Product[] = [
 	{
@@ -14,6 +22,7 @@ export const products: Product[] = [
 		description:
 			'Buzo negro de corte amplio, con capucha, bolsillo canguro y logo en el pecho.',
 		image: '/images/products/1.png',
+		category: 'abrigo'
 	},
 	{
 		id: 2,
@@ -22,6 +31,7 @@ export const products: Product[] = [
 		description:
 			'Remera blanca de manga corta, cuello redondo y calce amplio con logo en el pecho.',
 		image: '/images/products/2.png',
+		category: 'remera'
 	},
 	{
 		id: 3,
@@ -30,6 +40,7 @@ export const products: Product[] = [
 		description:
 			'Campera verde oscuro con cuello alto, capucha y bolsillos frontales con cierre.',
 		image: '/images/products/3.png',
+		category: 'abrigo'
 	},
 	{
 		id: 4,
@@ -38,6 +49,7 @@ export const products: Product[] = [
 		description:
 			'Top color ciruela de corte ajustado, manga larga y cuello alto, con largo cropped.',
 		image: '/images/products/4.png',
+		category: 'remera'
 	},
 	{
 		id: 5,
@@ -46,6 +58,7 @@ export const products: Product[] = [
 		description:
 			'Pantalon negro de pierna amplia con bolsillos cargo, tiras laterales y cintura con cordon.',
 		image: '/images/products/5.png',
+		category: 'pantalon'
 	},
 	{
 		id: 6,
@@ -54,6 +67,7 @@ export const products: Product[] = [
 		description:
 			'Sweater de punto color chocolate con cuello alto, mangas amplias y terminaciones acanaladas.',
 		image: '/images/products/6.png',
+		category: 'abrigo'
 	},
 	{
 		id: 7,
@@ -62,6 +76,7 @@ export const products: Product[] = [
 		description:
 			'Tapado negro de corte amplio con solapas, botones frontales y bolsillos laterales.',
 		image: '/images/products/7.png',
+		category: 'abrigo'
 	},
 	{
 		id: 8,
@@ -70,6 +85,7 @@ export const products: Product[] = [
 		description:
 			'Top negro de calce ajustado con cuello alto y recortes que dejan un hombro al descubierto.',
 		image: '/images/products/8.png',
+		category: 'remera'
 	},
 	{
 		id: 9,
@@ -78,6 +94,7 @@ export const products: Product[] = [
 		description:
 			'Pantalon verde oliva de pierna amplia con bolsillos cargo y tiras laterales.',
 		image: '/images/products/9.png',
+		category: 'pantalon'	
 	},
 	{
 		id: 10,
@@ -86,6 +103,7 @@ export const products: Product[] = [
 		description:
 			'Campera color ciruela de calce amplio con cierre frontal y bolsillos delanteros.',
 		image: '/images/products/10.png',
+		category: 'abrigo'
 	},
 	{
 		id: 11,
@@ -94,6 +112,7 @@ export const products: Product[] = [
 		description:
 			'Camisa negra de manga larga y corte amplio con botones frontales y bolsillo en el pecho.',
 		image: '/images/products/11.png',
+		category: 'remera'
 	},
 	{
 		id: 12,
@@ -102,6 +121,7 @@ export const products: Product[] = [
 		description:
 			'Musculosa blanca de textura acanalada con cuello redondo, corte cropped y logo en el pecho.',
 		image: '/images/products/12.png',
+		category: 'remera'
 	},
 	{
 		id: 13,
@@ -110,6 +130,7 @@ export const products: Product[] = [
 		description:
 			'Pantalon marron de corte holgado y pierna amplia con bolsillos cargo laterales.',
 		image: '/images/products/13.png',
+		category: 'pantalon'
 	},
 	{
 		id: 14,
@@ -118,6 +139,7 @@ export const products: Product[] = [
 		description:
 			'Jogger gris melange de corte relajado con cintura elastica, bolsillos y logo en la pierna.',
 		image: '/images/products/14.png',
+		category: 'pantalon'
 	},
 	{
 		id: 15,
@@ -126,5 +148,6 @@ export const products: Product[] = [
 		description:
 			'Gorra negra de seis paneles con visera curva y logo blanco en el frente.',
 		image: '/images/products/15.png',
+		category: 'accesorio'
 	},
 ];
