@@ -1,6 +1,7 @@
 import { createBrowserRouter, Navigate, Outlet } from 'react-router';
 import { ProductPage } from '../pages/product/product';
 import { CategoryPage } from '../pages/category/category';
+import { SearchPage } from '../pages/search/search';
 import { Navbar } from '../shared/components/Navbar/Navbar';
 
 export const appRouter = createBrowserRouter([
@@ -22,6 +23,10 @@ export const appRouter = createBrowserRouter([
       {
         path: '/categorias/:categorySlug',
         element: <CategoryPage />,
+      },
+      {
+        path: '/buscar',
+        element: <SearchPage />,
       },
     ],
   }

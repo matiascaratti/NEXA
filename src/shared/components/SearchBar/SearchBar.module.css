@@ -10,10 +10,17 @@
   gap: 10px;
 }
 
+.input-wrapper {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  display: flex;
+}
+
 .search-container input {
   flex: 1;
   min-width: 0;
-  padding: 10px;
+  padding: 10px 36px 10px 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
@@ -36,6 +43,86 @@
 .search-container button:hover {
   background-color: #333;
   transition: background-color 0.3s ease;
+}
+
+.search-container .clear-button,
+.search-container .remove-recent {
+  padding: 0 6px;
+  border: none;
+  background: transparent;
+  color: #666;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.search-container .clear-button {
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.search-container .clear-button:hover,
+.search-container .remove-recent:hover {
+  background: transparent;
+  color: #000;
+}
+
+.suggestions {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  z-index: 20;
+  margin: 0;
+  padding: 4px 0;
+  list-style: none;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  max-height: 22rem;
+  overflow-y: auto;
+}
+
+.suggestions-title {
+  padding: 6px 12px;
+  font-size: 12px;
+  color: #888;
+  text-transform: uppercase;
+}
+
+.suggestion {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  color: #333;
+  cursor: pointer;
+}
+
+.suggestion.active {
+  background: #f0f0f0;
+}
+
+.suggestion img {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.icon {
+  width: 32px;
+  text-align: center;
+  color: #888;
+}
+
+.suggestion-text {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 @media (max-width: 760px) {
